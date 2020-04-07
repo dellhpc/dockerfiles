@@ -10,5 +10,6 @@ This directory contains Dockerfiles for the JupyterLab containers offered by Omn
 * jupyterlab-tensorboard
 
 ## Directories
+* `base` - A Base image from which other JupyterLab containers will be constructed
 * `x86` - Dockerfile for Intel Xeon CPU nodes (unaccelerated)
 * `nvidia` - Dockerfile for Nvidia GPU-accelerated nodes
