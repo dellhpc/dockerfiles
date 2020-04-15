@@ -1,5 +1,14 @@
 FROM jupyter/base-notebook:lab-1.0.1
 
+LABEL org.opencontainers.image.title="Dell Data Science Lab - Base Container" \
+      org.opencontainers.image.description="A JupyterLab container with Python3 and R kernels, plus jupyterlab-git extension" \
+      org.opencontainers.image.author="Lucas A. Wilson" \
+      org.opencontainers.image.vendor="Dell Technologies" \
+      org.opencontainers.image.version="1.0" \
+      org.opencontainers.image.licenses="Apache-2.0" \
+      org.opencontainers.image.source="https://github.com/dellhpc/dockerfiles/datasciencelab/base/Dockerfile" \
+      org.opencontainers.image.documentation="https://github.com/dellhpc/dockerfiles/datasciencelab/README.md"
+
 ARG  JUPYTERHUB_VERSION=0.9.6
 
 USER root
